@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Header() {
     return (
-        <section className="bg-preto py-60 flex justify-center items-center">
+        <section className="bg-preto h-screen flex justify-center items-center">
             <div className="bg-amarelo flex flex-col rounded-2xl">
                 <h1 className="mx-48 mt-5 font-bold text-lg text-center">
                     CONFIGURAÇÕES
@@ -41,9 +43,12 @@ export default function Header() {
                 </div>
 
                 <div className="flex justify-between mt-16 mb-10 mx-12">
-                    <button className="border-2 border-preto bg-preto rounded-lg text-branco px-6 py-5 flex items-center h-5 mr-24 text-sm">
-                        CANCELAR
-                    </button>
+                    <Link href="/">
+                        <button className="border-2 border-preto bg-preto rounded-lg text-branco px-6 py-5 flex items-center h-5 mr-24 text-sm">
+                            CANCELAR
+                        </button>
+                    </Link>
+
                     <button className="border-2 border-preto bg-preto rounded-lg text-branco px-5 py-5 flex items-center h-5 text-sm">
                         CONFIRMAR
                     </button>

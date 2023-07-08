@@ -1,7 +1,7 @@
 export default function Senha() {
     return (
         <div>
-            <section className="bg-preto py-96 flex justify-center items-center">
+            <section className="bg-preto h-screen flex justify-center items-center">
                 <div className="bg-amarelo flex flex-col rounded-2xl">
                     <h1 className="mx-40 mt-5 font-bold text-center mb-5 text-lg">
                         ESQUECEU A SENHA?

@@ -1,9 +1,6 @@
-import Cadastro from "./components/Login/cadastro";
-import Configuracoes from "./components/Login/Configuracoes";
 import Footer from "./components/Login/Footer";
 import Header from "./components/Login/Header";
-import Login from "./components/Login/login";
-import Senha from "./components/Login/senha";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -16,7 +13,9 @@ export default function Home() {
                 <div className="bg-amarelo h-8 flex justify-around px-96 text-lg">
                     <button>Perfil</button>
                     <button>Jogos</button>
-                    <button>Configurações</button>
+                    <Link href="/configuracoes">
+                        <button>Configurações</button>
+                    </Link>
                 </div>
                 <section className="flex flex-row justify-center pt-2 px-96">
                     <div className="w-5/6 mr-8">
@@ -197,12 +196,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-            <Footer />
-            <Login />
-            <Cadastro />
-            <Senha />
-            <Header />
-            <Configuracoes />
             <Footer />
         </body>
     );

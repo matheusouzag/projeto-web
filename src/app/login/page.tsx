@@ -1,6 +1,9 @@
+import Link from "next/link";
+import React from "react";
+
 export default function Login() {
     return (
-        <section className="bg-preto py-96 flex justify-center items-center">
+        <section className="bg-preto h-screen flex justify-center items-center">
             <div className="bg-amarelo flex flex-col rounded-2xl">
                 <h1 className="mx-48 mt-5 font-bold text-lg text-center">
                     LOGIN
@@ -28,18 +31,22 @@ export default function Login() {
                         />
                     </div>
                 </div>
-
-                <button className="text-end mr-12 text-xs mt-1">
-                    Esqueci a senha
-                </button>
-
+                <Link className="text-end" href="/senha">
+                    <button className="mr-12 text-xs mt-1">
+                        Esqueci a senha
+                    </button>
+                </Link>
                 <div className="flex justify-center mt-16 mb-10">
-                    <button className="border-2 border-preto bg-preto rounded-lg text-branco px-5 py-5 flex items-center h-5 mr-20 text-sm">
-                        CADASTRE-SE
-                    </button>
-                    <button className="border-2 border-preto bg-preto rounded-lg text-branco px-10 py-5 flex items-center h-5 text-sm">
-                        ENTRAR
-                    </button>
+                    <Link href="/cadastro">
+                        <button className="border-2 border-preto bg-preto rounded-lg text-branco px-5 py-5 flex items-center h-5 mr-20 text-sm">
+                            CADASTRE-SE
+                        </button>
+                    </Link>
+                    <Link href="/">
+                        <button className="border-2 border-preto bg-preto rounded-lg text-branco px-10 py-5 flex items-center h-5 text-sm">
+                            ENTRAR
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>
