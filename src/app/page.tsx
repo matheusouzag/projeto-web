@@ -1,18 +1,24 @@
-import Footer from "./components/Login/Footer";
-import Header from "./components/Login/Header";
+"use client";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Link from "next/link";
+import Carrossel from "./components/Carrossel";
+import HeaderOn from "./components/HeaderOn";
 
 export default function Home() {
     return (
         <body className="bg-preto">
             <Header />
+            <Carrossel />
             <main>
                 <div className="bg-preto h-10 py-2 px-96">
                     <h1 className="text-branco">Bem vindo ao Gamebald!</h1>
                 </div>
                 <div className="bg-amarelo h-8 flex justify-around px-96 text-lg">
                     <button>Perfil</button>
-                    <button>Jogos</button>
+                    <Link className="text-end" href="/rating">
+                        <button>Jogos</button>
+                    </Link>
                     <Link href="/configuracoes">
                         <button>Configurações</button>
                     </Link>
@@ -29,8 +35,7 @@ export default function Home() {
                                 <div className="w-full pb-0.5 h-full ">
                                     <iframe
                                         className="h-full w-full pb-8"
-                                        src="https://www.youtube.com/watch?v=vVP-41wMO4I&t=50s"
-                                        allowFullScreen
+                                        src="img/trailer.mp4"
                                     ></iframe>
                                 </div>
                             </div>
@@ -199,4 +204,7 @@ export default function Home() {
             <Footer />
         </body>
     );
+}
+function useClient() {
+    throw new Error("Function not implemented.");
 }
