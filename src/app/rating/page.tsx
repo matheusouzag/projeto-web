@@ -9,7 +9,10 @@ export default function Rating() {
 
             <section className="bg-preto">
                 <div className="bg-amarelo h-8 flex justify-around px-96 text-lg mt-6">
-                    <button>Perfil</button>
+                <Link className="text-end" href="/perfil">
+                <button>Perfil</button>
+                    </Link>
+                    
                     <Link className="text-end" href="/rating">
                         <button>Jogos</button>
                     </Link>

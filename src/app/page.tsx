@@ -15,7 +15,9 @@ export default function Home() {
                     <h1 className="text-branco">Bem vindo ao Gamebald!</h1>
                 </div>
                 <div className="bg-amarelo h-8 flex justify-around px-96 text-lg">
-                    <button>Perfil</button>
+                <Link className="text-end" href="/perfil">
+                <button>Perfil</button>
+                    </Link>
                     <Link className="text-end" href="/rating">
                         <button>Jogos</button>
                     </Link>
