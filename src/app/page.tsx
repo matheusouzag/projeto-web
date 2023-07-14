@@ -32,9 +32,6 @@ export default function Home() {
                     <Link className="text-end" href="/jogos">
                         <button>Jogos</button>
                     </Link>
-                    <Link href="/configuracoes">
-                        <button>Configurações</button>
-                    </Link>
                 </div>
                 <section className="flex flex-row justify-center pt-2 px-52">
                     <div className="w-5/6 mr-8">

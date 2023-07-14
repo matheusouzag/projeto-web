@@ -56,25 +56,9 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/layout.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/layout.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/jogos/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/jogos/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -96,9 +80,17 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/perfil/page.tsx": {
+    "(app-client)/./src/app/layout.tsx": {
       "*": {
-        "id": "(sc_client)/./src/app/perfil/page.tsx",
+        "id": "(sc_client)/./src/app/layout.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/jogos/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/jogos/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -107,6 +99,22 @@
     "(app-client)/./src/app/rating/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/rating/page.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/perfil/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/perfil/page.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/configuracoes/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/configuracoes/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -275,19 +283,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\layout.tsx": {
-      "id": "(app-client)/./src/app/layout.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/rating/page:static/chunks/app/rating/page.js"
+        "app/configuracoes/page:static/chunks/app/configuracoes/page.js"
       ],
       "async": false
     },
@@ -295,15 +295,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/rating/page:static/chunks/app/rating/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\jogos\\page.tsx": {
-      "id": "(app-client)/./src/app/jogos/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/jogos/page:static/chunks/app/jogos/page.js"
+        "app/configuracoes/page:static/chunks/app/configuracoes/page.js"
       ],
       "async": false
     },
@@ -323,11 +315,19 @@
       ],
       "async": false
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\perfil\\page.tsx": {
-      "id": "(app-client)/./src/app/perfil/page.tsx",
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\layout.tsx": {
+      "id": "(app-client)/./src/app/layout.tsx",
       "name": "*",
       "chunks": [
-        "app/perfil/page:static/chunks/app/perfil/page.js"
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\jogos\\page.tsx": {
+      "id": "(app-client)/./src/app/jogos/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/jogos/page:static/chunks/app/jogos/page.js"
       ],
       "async": false
     },
@@ -338,9 +338,29 @@
         "app/rating/page:static/chunks/app/rating/page.js"
       ],
       "async": false
+    },
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\perfil\\page.tsx": {
+      "id": "(app-client)/./src/app/perfil/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/perfil/page:static/chunks/app/perfil/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\configuracoes\\page.tsx": {
+      "id": "(app-client)/./src/app/configuracoes/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/configuracoes/page:static/chunks/app/configuracoes/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\page": {
+      "modules": [],
+      "files": []
+    },
     "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\layout": {
       "modules": [
         "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\globals.css"
@@ -353,7 +373,7 @@
       "modules": [],
       "files": []
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\page": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\rating\\page": {
       "modules": [],
       "files": []
     },
@@ -361,7 +381,7 @@
       "modules": [],
       "files": []
     },
-    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\rating\\page": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\configuracoes\\page": {
       "modules": [],
       "files": []
     }

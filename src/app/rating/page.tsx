@@ -50,20 +50,17 @@ export default function Rating() {
       {token && <HeaderOn />}
 
       <section className="bg-preto">
-        <div className="bg-amarelo h-8 flex justify-around px-96 text-lg mt-6">
+        <div className="bg-amarelo h-8 flex justify-around px-52 text-lg mt-6">
           <Link className="text-end" href="/perfil">
             <button>Perfil</button>
           </Link>
 
-          <Link className="text-end" href="/rating">
+          <Link className="text-end" href="/jogos">
             <button>Jogos</button>
-          </Link>
-          <Link href="/configuracoes">
-            <button>Configurações</button>
           </Link>
         </div>
 
-        <div className="grid grid-cols-6 grid-rows-3 px-96 mt-6 py-20">
+        <div className="grid grid-cols-6 grid-rows-3 px-52 mt-6 py-20">
           <div className="col-span-2 row-span-3">
             <picture>
               <img src={`http://localhost:3001/public/${jogo?.foto}`} alt="" />
@@ -84,7 +81,7 @@ export default function Rating() {
                     <option value="jogando">JOGANDO</option>
                     <option value="completo">COMPLETO</option>
                     <option value="quero jogar">QUERO JOGAR</option>
-                    <option value="dropped">DROPPED</option>
+                    <option value="dropado">DROPADO</option>
                   </select>
                 </div>
                 <div className="flex flex-row mt-2">

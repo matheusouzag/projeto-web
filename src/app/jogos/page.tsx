@@ -47,8 +47,7 @@ export default function Login() {
     if (filtro != "Todos") {
       axios
         .get(
-          `http://localhost:3001/avaliacao/nota/${localStorage.getItem("user")}`,
-          {params}
+          `http://localhost:3001/avaliacao/nota/${localStorage.getItem("user")}/${filtro}`
         )
         .then((result) => {
           setJogos(result.data.data);
@@ -73,20 +72,14 @@ export default function Login() {
         <div className="bg-amarelo h-8 flex justify-between items-center px-52  text-lg mt-6">
           <button onClick={() => filtrarJogos("Todos")}>Todos</button>
 
-          <button onClick={() => filtrarJogos("Todos")}>Jogando</button>
+          <button onClick={() => filtrarJogos("Jogando")}>Jogando</button>
 
-          <button onClick={() => filtrarJogos("Todos")}>Completos</button>
+          <button onClick={() => filtrarJogos("Completo")}>Completos</button>
 
-          <button onClick={() => filtrarJogos("Todos")}>Quero Jogar</button>
+          <button onClick={() => filtrarJogos("Quero Jogar")}>Quero Jogar</button>
 
-          <button onClick={() => filtrarJogos("Dropados")}>Dropados</button>
+          <button onClick={() => filtrarJogos("Dropado")}>Dropados</button>
 
-          <div className="flex justify-center items-center gap-2">
-            <input className="h-6 w-32 rounded-lg" type="text" />
-            <button onClick={() => filtrarJogos("Buscar")}>
-              <img className="w-5 h-5" src="img/icone-buscar.png" alt="" />
-            </button>
-          </div>
         </div>
 
         <h4 className="text-center text-3xl my-2 text-branco">{filtroJogos}</h4>

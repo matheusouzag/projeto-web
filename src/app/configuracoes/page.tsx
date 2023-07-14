@@ -27,18 +27,15 @@ export default function Header() {
             .put(`http://localhost:3001/usuarios/config/${usuario?.id}`, {
                 username: values.username,
                 bio: values.bio,
-                foto_de_perfil: values.foto_de_perfil,
             })
             .then((response) => {
                 alert(response.data.msg);
-                console.log(response);
             });
     };
 
     const initialValues = {
         username: usuario?.username,
         bio: "",
-        foto_de_perfil: "",
     } as UsuarioDTO;
     return (
         <section className="bg-preto h-screen flex justify-center items-center">
@@ -73,17 +70,6 @@ export default function Header() {
                                 />
                             </div>
 
-                            <div className="flex flex-col px-12 mt-4">
-                                <label className="mb-2" htmlFor="image">
-                                    Imagem
-                                </label>
-                                <Field
-                                    className="border border-branco rounded-lg h-10"
-                                    name="foto_de_perfil"
-                                    id="foto_de_perfil"
-                                    type="file"
-                                />
-                            </div>
                         </div>
 
                         <div className="flex justify-between mt-16 mb-10 mx-12">
