@@ -72,17 +72,9 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/login/page.tsx": {
+    "(app-client)/./src/app/jogos/page.tsx": {
       "*": {
-        "id": "(sc_client)/./src/app/login/page.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/cadastro/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/cadastro/page.tsx",
+        "id": "(sc_client)/./src/app/jogos/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -119,27 +111,11 @@
         "chunks": [],
         "async": false
       }
-    },
-    "(app-client)/./src/app/configuracoes/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/configuracoes/page.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/jogos/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/jogos/page.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
     }
   },
   "edgeSSRModuleMapping": {},
   "clientModules": {
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\app-router.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -147,7 +123,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -155,7 +131,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -163,7 +139,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -171,7 +147,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -179,7 +155,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -187,7 +163,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\router-reducer\\fetch-server-response.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\router-reducer\\fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -195,7 +171,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\router-reducer\\fetch-server-response.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\router-reducer\\fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -203,7 +179,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\shared\\lib\\app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -211,7 +187,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\shared\\lib\\app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -219,7 +195,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\shared\\lib\\hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -227,7 +203,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\shared\\lib\\hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -235,7 +211,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\shared\\lib\\server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -243,7 +219,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\shared\\lib\\server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -251,7 +227,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -259,7 +235,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -267,7 +243,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -275,7 +251,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -283,7 +259,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\components\\static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -291,7 +267,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\components\\static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -299,7 +275,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\layout.tsx": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\layout.tsx": {
       "id": "(app-client)/./src/app/layout.tsx",
       "name": "*",
       "chunks": [
@@ -307,39 +283,31 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\link.js": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/rating/page:static/chunks/app/rating/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\node_modules\\next\\dist\\esm\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/rating/page:static/chunks/app/rating/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\jogos\\page.tsx": {
+      "id": "(app-client)/./src/app/jogos/page.tsx",
       "name": "*",
       "chunks": [
         "app/jogos/page:static/chunks/app/jogos/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\esm\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/jogos/page:static/chunks/app/jogos/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\login\\page.tsx": {
-      "id": "(app-client)/./src/app/login/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/login/page:static/chunks/app/login/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\cadastro\\page.tsx": {
-      "id": "(app-client)/./src/app/cadastro/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/cadastro/page:static/chunks/app/cadastro/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\components\\Carrossel.tsx": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\components\\Carrossel.tsx": {
       "id": "(app-client)/./src/app/components/Carrossel.tsx",
       "name": "*",
       "chunks": [
@@ -347,7 +315,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\page.tsx": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\page.tsx": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "*",
       "chunks": [
@@ -355,7 +323,7 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\perfil\\page.tsx": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\perfil\\page.tsx": {
       "id": "(app-client)/./src/app/perfil/page.tsx",
       "name": "*",
       "chunks": [
@@ -363,65 +331,37 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\rating\\page.tsx": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\rating\\page.tsx": {
       "id": "(app-client)/./src/app/rating/page.tsx",
       "name": "*",
       "chunks": [
         "app/rating/page:static/chunks/app/rating/page.js"
       ],
       "async": false
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\configuracoes\\page.tsx": {
-      "id": "(app-client)/./src/app/configuracoes/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/configuracoes/page:static/chunks/app/configuracoes/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\jogos\\page.tsx": {
-      "id": "(app-client)/./src/app/jogos/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/jogos/page:static/chunks/app/jogos/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\layout": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\layout": {
       "modules": [
-        "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\globals.css"
+        "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\globals.css"
       ],
       "files": [
         "static/css/app/layout.css"
       ]
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\login\\page": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\jogos\\page": {
       "modules": [],
       "files": []
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\cadastro\\page": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\page": {
       "modules": [],
       "files": []
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\page": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\perfil\\page": {
       "modules": [],
       "files": []
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\perfil\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\rating\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\configuracoes\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\jogos\\page": {
+    "C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\projetos\\projeto-web\\src\\app\\rating\\page": {
       "modules": [],
       "files": []
     }
