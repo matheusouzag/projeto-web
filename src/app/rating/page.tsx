@@ -1,18 +1,73 @@
+"use client";
+import { UsuarioDTO } from "@/model/usuario.dto";
+import axios from "axios";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import HeaderOn from "../components/HeaderOn";
 
 export default function Rating() {
+    const [token, setToken] = useState("");
+    const [usuario, setUsuario] = useState(null as unknown as UsuarioDTO);
+
+    const [status, setStatus] = useState("");
+    const [nota, setNota] = useState("");
+
+    useEffect(() => {
+        if (localStorage.getItem("user")) {
+            axios
+                .get(
+                    `http://localhost:3001/usuarios/${localStorage.getItem(
+                        "user"
+                    )}`
+                )
+                .then((result) => {
+                    setUsuario(result.data.data);
+                });
+        }
+    }, []);
+
+    useEffect(() => {
+        if (localStorage.getItem("token")) {
+            setToken(localStorage?.getItem("token") || "");
+        }
+    }, []);
+
+    const mandarAvaliacao = (values: {
+        nome: any;
+        username: any;
+        email: any;
+        senha: any;
+    }) => {
+        axios
+            .post("http://localhost:3001/avaliacao", {
+                usuario: usuario.id,
+            })
+            .then((response) => {
+                alert(response.data.msg);
+                console.log(response);
+            });
+    };
+
+    const initialValues = {
+        nome: "",
+        username: "",
+        email: "",
+        senha: "",
+    };
+
     return (
         <body className="bg-preto">
-            <Header />
+            {!token && <Header />}
+            {token && <HeaderOn />}
 
             <section className="bg-preto">
                 <div className="bg-amarelo h-8 flex justify-around px-96 text-lg mt-6">
-                <Link className="text-end" href="/perfil">
-                <button>Perfil</button>
+                    <Link className="text-end" href="/perfil">
+                        <button>Perfil</button>
                     </Link>
-                    
+
                     <Link className="text-end" href="/rating">
                         <button>Jogos</button>
                     </Link>
@@ -30,7 +85,7 @@ export default function Rating() {
                             />
                         </picture>
                     </p>
-                    <div className="col-span-4 bg-amarelo">
+                    <div className="col-span-4 bg-amarelo rounded-lg">
                         <div className="flex flex-row justify-between">
                             <div className="ml-8 mt-4">
                                 <h1 className="font-bold text-lg">
@@ -38,7 +93,13 @@ export default function Rating() {
                                 </h1>
                                 <div className="flex flex-row mt-6">
                                     <h2 className="">STATUS :</h2>
-                                    <select name="status">
+                                    <select
+                                        name="status"
+                                        value={status}
+                                        onChange={(e) =>
+                                            setStatus(e.target.value)
+                                        }
+                                    >
                                         <option value="">---</option>
                                         <option value="jogando">JOGANDO</option>
                                         <option value="completo">
@@ -52,7 +113,13 @@ export default function Rating() {
                                 </div>
                                 <div className="flex flex-row mt-2">
                                     <h2>NOTA: </h2>
-                                    <select name="nota">
+                                    <select
+                                        name="nota"
+                                        value={nota}
+                                        onChange={(e) =>
+                                            setNota(e.target.value)
+                                        }
+                                    >
                                         <option value="">---</option>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
@@ -63,17 +130,21 @@ export default function Rating() {
                                     </select>
                                 </div>
                             </div>
-
-                            <picture>
-                                <img
-                                    className="h-20"
-                                    src="img/logo_Gamebald.png"
-                                    alt="Logo da Gamebald, com um G grande com uma coroa amarela"
-                                />
-                            </picture>
+                            <div className="flex flex-col justify-between">
+                                <picture>
+                                    <img
+                                        className="h-20"
+                                        src="img/logo_Gamebald.png"
+                                        alt="Logo da Gamebald, com um G grande com uma coroa amarela"
+                                    />
+                                </picture>
+                                <button className="bg-preto text-branco mr-2">
+                                    ENVIAR
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <p className="col-span-4 row-span-2 bg-amarelo mt-2">
+                    <p className="col-span-4 row-span-2 bg-amarelo mt-2 rounded-lg">
                         <div className="mx-8 my-4">
                             <div className="flex flex-row justify-between items-center">
                                 <h1 className="font-bold text-lg">SINOPSE</h1>

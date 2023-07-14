@@ -4,9 +4,13 @@ export default function Header() {
     return (
         <header className="bg-amarelo h-18">
             <div className="flex flex-row justify-around items-center">
-                <picture className="w-10">
-                    <img src="img/gamebald.png" alt="Logo do G" />
-                </picture>
+                <Link href="/">
+                    <button className="w-10">
+                        <picture>
+                            <img src="img/gamebald.png" alt="Logo do G" />
+                        </picture>
+                    </button>
+                </Link>
 
                 <div className="flex justify-center">
                     <Link href="/login">

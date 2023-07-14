@@ -8,15 +8,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-    const [token, setToken] = useState('');
+    const [token, setToken] = useState("");
 
     useEffect(() => {
-        if(localStorage.getItem("token")){
-            setToken(localStorage?.getItem("token") || '')
+        if (localStorage.getItem("token")) {
+            setToken(localStorage?.getItem("token") || "");
         }
-      }, []);
-
-
+    }, []);
 
     return (
         <body className="bg-preto">
@@ -24,25 +22,25 @@ export default function Home() {
             {token && <HeaderOn />}
             <Carrossel />
             <main>
-                <div className="bg-preto h-10 py-2 px-96">
+                <div className="bg-preto h-10 py-2 px-52">
                     <h1 className="text-branco">Bem vindo ao Gamebald!</h1>
                 </div>
-                <div className="bg-amarelo h-8 flex justify-around px-96 text-lg">
+                <div className="bg-amarelo h-8 flex justify-around px-52 text-lg ">
                     <Link className="text-end" href="/perfil">
                         <button>Perfil</button>
                     </Link>
-                    <Link className="text-end" href="/rating">
+                    <Link className="text-end" href="/jogos">
                         <button>Jogos</button>
                     </Link>
                     <Link href="/configuracoes">
                         <button>Configurações</button>
                     </Link>
                 </div>
-                <section className="flex flex-row justify-center pt-2 px-96">
+                <section className="flex flex-row justify-center pt-2 px-52">
                     <div className="w-5/6 mr-8">
                         <h2 className="text-branco mb-2">Últimas novidades</h2>
                         <div className="grid grid-cols-2 grid-rows-3">
-                            <div className="col-span-2 row-span-2 mb-2 bg-amarelo p-2">
+                            <div className="col-span-2 row-span-2 mb-2 bg-amarelo p-2 rounded-lg">
                                 <h3 className="pb-2">
                                     Starfield ganha data de lançamento, 6 de
                                     setembro de 2023!
@@ -54,7 +52,7 @@ export default function Home() {
                                     ></iframe>
                                 </div>
                             </div>
-                            <div className="bg-amarelo mr-1">
+                            <div className="bg-amarelo mr-1 rounded-lg">
                                 <picture>
                                     <img
                                         src="img/starfield.png"
@@ -63,7 +61,7 @@ export default function Home() {
                                     />
                                 </picture>
                             </div>
-                            <div className="flex bg-amarelo ml-1 text-xl justify-center items-center p-3">
+                            <div className="flex bg-amarelo ml-1 text-xl justify-center items-center p-3 rounded-lg">
                                 Neste RPG para a nova geração em, meio às
                                 estrelas, crie o personagem que você quiser e
                                 explore com liberdade inigualável enquanto
@@ -74,7 +72,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col">
                         <h2 className="text-branco mb-2">Top jogos (rating)</h2>
-                        <div className="bg-amarelo mb-1 p-2">
+                        <div className="bg-amarelo mb-1 p-2 rounded-lg">
                             <div className="flex flex-row">
                                 <picture>
                                     <img
@@ -102,7 +100,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-amarelo mb-1 p-2">
+                        <div className="bg-amarelo mb-1 p-2 rounded-lg">
                             <div className="flex flex-row">
                                 <picture>
                                     <img
@@ -129,7 +127,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-amarelo mb-1 p-2">
+                        <div className="bg-amarelo mb-1 p-2 rounded-lg">
                             <div className="flex flex-row">
                                 <picture>
                                     <img
@@ -156,7 +154,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-amarelo mb-1 p-2">
+                        <div className="bg-amarelo mb-1 p-2 rounded-lg">
                             <div className="flex flex-row">
                                 <picture>
                                     <img
@@ -183,7 +181,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-amarelo mb-1 p-2">
+                        <div className="bg-amarelo mb-1 p-2 rounded-lg">
                             <div className="flex flex-row">
                                 <picture>
                                     <img
@@ -210,9 +208,13 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <button>
-                            <p className="text-branco flex justify-end">MAIS</p>
-                        </button>
+                        <Link href="/">
+                            <button>
+                                <p className="text-branco flex justify-end">
+                                    MAIS
+                                </p>
+                            </button>
+                        </Link>
                     </div>
                 </section>
             </main>

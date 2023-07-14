@@ -9,4 +9,8 @@ export interface UsuarioDTO{
     avaliacao: string[],
     amigo: string[],
     amigoDe: string[],
+    completo: string,
+    jogando: string,
+    queroJogar: string,
+    naoAguento: string,
 }

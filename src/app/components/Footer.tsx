@@ -9,42 +9,50 @@ export default function Footer() {
             </picture>
             <div className="flex flex-row items-center">
                 <p>REDES SOCIAIS: </p>
-                <button className="ml-2">
-                    <picture>
-                        <img
-                            className="w-14"
-                            src="img/discord.png"
-                            alt="Icone da rede Discord"
-                        />
-                    </picture>
-                </button>
-                <button className="ml-2">
-                    <picture>
-                        <img
-                            className="w-14"
-                            src="img/instagram.png"
-                            alt="Icone da rede social Instagram"
-                        />
-                    </picture>
-                </button>
-                <button className="ml-2">
-                    <picture>
-                        <img
-                            className="w-14"
-                            src="img/facebook.png"
-                            alt="Icone da rede social Facebook"
-                        />
-                    </picture>
-                </button>
-                <button className="ml-2">
-                    <picture>
-                        <img
-                            className="w-14"
-                            src="img/twitter.png"
-                            alt="Icone da rede social "
-                        />
-                    </picture>
-                </button>
+                <a target="_blank" href="https://discord.com/">
+                    <button className="ml-2">
+                        <picture>
+                            <img
+                                className="w-14"
+                                src="img/discord.png"
+                                alt="Icone da rede Discord"
+                            />
+                        </picture>
+                    </button>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <button className="ml-2">
+                        <picture>
+                            <img
+                                className="w-14"
+                                src="img/instagram.png"
+                                alt="Icone da rede social Instagram"
+                            />
+                        </picture>
+                    </button>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                    <button className="ml-2">
+                        <picture>
+                            <img
+                                className="w-14"
+                                src="img/facebook.png"
+                                alt="Icone da rede social Facebook"
+                            />
+                        </picture>
+                    </button>
+                </a>
+                <a target="_blank" href="https://twitter.com/">
+                    <button className="ml-2">
+                        <picture>
+                            <img
+                                className="w-14"
+                                src="img/twitter.png"
+                                alt="Icone da rede social "
+                            />
+                        </picture>
+                    </button>
+                </a>
             </div>
         </footer>
     );

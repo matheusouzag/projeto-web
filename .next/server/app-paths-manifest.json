@@ -1,5 +1,4 @@
 {
-  "/configuracoes/page": "app/configuracoes/page.js",
-  "/perfil/page": "app/perfil/page.js",
+  "/jogos/page": "app/jogos/page.js",
   "/rating/page": "app/rating/page.js"
 }
