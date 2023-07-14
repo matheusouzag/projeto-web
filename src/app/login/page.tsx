@@ -7,24 +7,6 @@ import * as yup from "yup";
 
 export default function Login() {
     const [errorMessage, setErrorMessage] = useState("");
-    const [loggedIn, setLoggedIn] = useState(false);
-    const [response, setResponse] = useState<{
-        data: { data: { id: string; token: string } };
-    }>({ data: { data: { id: "", token: "" } } });
-    const [id, setId] = useState("");
-    const [token, setToken] = useState("");
-
-    useEffect(() => {
-        if (loggedIn) {
-            console.log(response.data.data);
-            console.log(response.data.data);
-            if (response.data.data) {
-                setId(response.data.data.id);
-                setToken(response.data.data.token);
-                console.log(token);
-            }
-        }
-    }, [loggedIn, response]);
 
     const handleLogin = (values: { email: any; senha: any }) => {
         axios
@@ -34,9 +16,9 @@ export default function Login() {
             })
             .then((response) => {
                 alert("Usuário logado com sucesso");
-                setLoggedIn(true);
-                setResponse(response.data);
-                console.log(response);
+                localStorage.setItem("token", response.data.token);
+                localStorage.setItem("user", response.data.data);
+                window.location.href = "/";
             })
             .catch((error) => {
                 setErrorMessage("Email ou senha incorretos");

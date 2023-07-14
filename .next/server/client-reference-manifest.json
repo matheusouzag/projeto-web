@@ -56,6 +56,14 @@
         "async": false
       }
     },
+    "(app-client)/./src/app/layout.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/layout.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
@@ -80,9 +88,9 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/layout.tsx": {
+    "(app-client)/./src/app/perfil/page.tsx": {
       "*": {
-        "id": "(sc_client)/./src/app/layout.tsx",
+        "id": "(sc_client)/./src/app/perfil/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -91,6 +99,14 @@
     "(app-client)/./src/app/cadastro/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/cadastro/page.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/app/jogos/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/jogos/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -267,6 +283,14 @@
       ],
       "async": false
     },
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\layout.tsx": {
+      "id": "(app-client)/./src/app/layout.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\node_modules\\next\\dist\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
@@ -299,11 +323,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\layout.tsx": {
-      "id": "(app-client)/./src/app/layout.tsx",
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\perfil\\page.tsx": {
+      "id": "(app-client)/./src/app/perfil/page.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/perfil/page:static/chunks/app/perfil/page.js"
       ],
       "async": false
     },
@@ -312,6 +336,14 @@
       "name": "*",
       "chunks": [
         "app/cadastro/page:static/chunks/app/cadastro/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\jogos\\page.tsx": {
+      "id": "(app-client)/./src/app/jogos/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/jogos/page:static/chunks/app/jogos/page.js"
       ],
       "async": false
     },
@@ -325,10 +357,6 @@
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\page": {
-      "modules": [],
-      "files": []
-    },
     "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\layout": {
       "modules": [
         "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\globals.css"
@@ -337,7 +365,7 @@
         "static/css/app/layout.css"
       ]
     },
-    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\configuracoes\\page": {
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\page": {
       "modules": [],
       "files": []
     },
@@ -345,7 +373,19 @@
       "modules": [],
       "files": []
     },
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\rating\\page": {
+      "modules": [],
+      "files": []
+    },
     "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\cadastro\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\jogos\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\Matheus Souza\\Documents\\web\\projeto-web\\gamebald\\src\\app\\configuracoes\\page": {
       "modules": [],
       "files": []
     },
