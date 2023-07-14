@@ -17,7 +17,7 @@ export default function Login() {
             .then((response) => {
                 alert("Usuário logado com sucesso");
                 localStorage.setItem("token", response.data.token);
-                localStorage.setItem("user", response.data.data);
+                localStorage.setItem("user", response.data.data.id);
                 window.location.href = "/";
             })
             .catch((error) => {

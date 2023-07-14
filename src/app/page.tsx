@@ -8,7 +8,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-    const [token, setToken] = useState(localStorage.getItem("token"));
+    const [token, setToken] = useState('');
+
+    useEffect(() => {
+        if(localStorage.getItem("token")){
+            setToken(localStorage?.getItem("token") || '')
+        }
+      }, []);
+
+
 
     return (
         <body className="bg-preto">
