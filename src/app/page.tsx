@@ -4,8 +4,16 @@ import Header from "./components/Header";
 import Link from "next/link";
 import Carrossel from "./components/Carrossel";
 import HeaderOn from "./components/HeaderOn";
+import axios from "axios";
+import { useEffect } from "react";
 
 export default function Home() {
+    function teste() {
+        axios.get("http://localhost:3001/usuarios").then((result) => {
+            console.log(result.data);
+        });
+    }
+
     return (
         <body className="bg-preto">
             <Header />
@@ -15,8 +23,15 @@ export default function Home() {
                     <h1 className="text-branco">Bem vindo ao Gamebald!</h1>
                 </div>
                 <div className="bg-amarelo h-8 flex justify-around px-96 text-lg">
-                <Link className="text-end" href="/perfil">
-                <button>Perfil</button>
+                    <button
+                        onClick={() => {
+                            teste();
+                        }}
+                    >
+                        teste
+                    </button>
+                    <Link className="text-end" href="/perfil">
+                        <button>Perfil</button>
                     </Link>
                     <Link className="text-end" href="/rating">
                         <button>Jogos</button>
