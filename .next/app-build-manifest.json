@@ -16,20 +16,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/jogos/page.js"
     ],
-    "/rating/page": [
+    "/cadastro/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/rating/page.js"
+      "static/chunks/app/cadastro/page.js"
+    ],
+    "/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/login/page.js"
     ],
     "/perfil/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/perfil/page.js"
     ],
-    "/configuracoes/page": [
+    "/rating/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/configuracoes/page.js"
+      "static/chunks/app/rating/page.js"
     ]
   }
 }

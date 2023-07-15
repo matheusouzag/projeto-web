@@ -66,11 +66,7 @@ export default function Login() {
                                 {errorMessage}
                             </p>
                         )}
-                        <Link className="text-end" href="/senha">
-                            <button className="mr-12 text-xs mt-1">
-                                Esqueci a senha
-                            </button>
-                        </Link>
+                        
                         <div className="flex justify-center mt-16 mb-10">
                             <Link href="/cadastro">
                                 <button className="border-2 border-preto bg-preto rounded-lg text-branco px-5 py-5 flex items-center h-5 mr-20 text-sm">
