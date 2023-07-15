@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'font-iceberg';
+    src: url('../../public/fonts/Iceberg-Regular.ttf') format('truetype');
+  }
+
+body {
+    font-family: 'font-iceberg'
+}
+::-webkit-scrollbar {
+    margin-left: 1em;
+    width: 10px; /* Largura da barra de rolagem */
+    --tw-bg-opacity: 0.4;
+    border-radius: 10px;
+    background-color: none; /* Cor de fundo da barra de rolagem */
+  }
+  
+  /* Cor do preenchimento da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    --tw-bg-opacity: 0.5;
+    background-color: black;
+  }
+  
+  /* Estilo do canto da barra de rolagem */
+  ::-webkit-scrollbar-corner {
+    --tw-bg-opacity: 0.4;
+    background-color: black /* Cor de fundo do canto da barra de rolagem */
+  }
